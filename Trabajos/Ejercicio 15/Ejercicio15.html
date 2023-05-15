@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 15 - JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>FORMULARIO DE CARGA DE CD</h1>
+    <button class="botonAlbum" onclick="mostrarFormulario()">CREAR ALBUM</button>
+    <form class="formulario" id="formularioCD" onsubmit="event.preventDefault(); guardarDatos();">
+      <label for="nombreCD">Nombre del CD:</label>
+      <input class="input" type="text" id="nombreCD" name="nombreCD"><br>
+
+      <label for="artistaCD">Artista:</label>
+      <input class="input" type="text" id="artistaCD" name="artistaCD"><br>
+
+      <label for="generoCD">Género:</label>
+      <input class="input" type="text" id="generoCD" name="generoCD"><br>
+
+      <div id="canciones-container">
+        <label id="labelCancion1">Canción 1:</label>
+        <input class="input" type="text" name="nombreCancion" placeholder="Nombre de la canción">
+        <input class="input" type="text" name="compositorCancion" placeholder="Compositor de la canción">
+        <input class="input" type="text" name="duracionCancion" placeholder="Duración de la canción">
+      </div>
+
+      <button class="boton" type="button" onclick="agregarCancion()">AGREGAR CANCION</button>
+      <br>
+      <input class="boton" type="submit" value="GUARDAR">
+    </form>
+    <p class="parrafo" id="mensaje">Mira la consola :) </p>
+  </div>
+
+  <script src="Ejercicio15.js"></script>
+</body>
+
+</html>

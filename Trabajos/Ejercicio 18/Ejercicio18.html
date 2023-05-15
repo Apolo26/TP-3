@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 18 - JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CONVERTIDOR DE MONEDA</h1>
+    <p class="parrafo">EL USD ESTA TOMADO A $467</p>
+    <div id="conversorContainer">
+      <div class="inputContainer">
+        <label class="label" for="monedaInput">ARS:</label>
+        <input class="input" type="number" id="monedaInput" placeholder="Ingrese la cantidad">
+      </div>
+  
+      <div class="arrowContainer" onclick="intercambiarMonedas()">
+        <i class="fas fa-exchange-alt"></i>
+      </div>
+  
+      <div class="inputContainer">
+        <label class="label" for="resultadoInput">USD:</label>
+        <input class="input" type="text" id="resultadoInput" readonly>
+      </div>
+    </div>
+    <button class="boton" onclick="convertirMoneda()">Convertir</button>
+  </div>
+
+  <script src="Ejercicio18.js"></script>
+</body>
+
+</html>

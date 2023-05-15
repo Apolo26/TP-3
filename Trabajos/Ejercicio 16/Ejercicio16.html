@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 16 - JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CARGAR CONTACTO</h1>
+    <button class="boton" onclick="mostrarFormulario()">CREAR CONTACTO</button>
+    <form class="formulario" id="formularioContacto" onsubmit="event.preventDefault(); guardarContacto();">
+      <label for="nombre">Nombre:</label>
+      <input class="input" type="text" id="nombre" name="nombre"><br>
+
+      <label for="apellido">Apellido:</label>
+      <input class="input" type="text" id="apellido" name="apellido"><br>
+
+      <label for="mail">Email:</label>
+      <input class="input" type="text" id="mail" name="mail"><br>
+
+      <div id="telefonos-container">
+        <label id="labelTelefono1">Teléfono 1:</label>
+        <input class="input" type="text" name="telefono" placeholder="Teléfono">
+      </div>
+
+      <button class="boton" type="button" onclick="agregarTelefono()">AGREGAR TELEFONO</button>
+      <br>
+      <input class="boton" type="submit" value="GUARDAR">
+    </form>
+    <p class="parrafo" id="mensaje"></p>
+  </div>
+
+  <script src="Ejercicio16.js"></script>
+</body>
+
+</html>

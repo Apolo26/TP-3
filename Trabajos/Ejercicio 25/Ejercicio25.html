@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 25 - JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>ACCESO AL SISTEMA</h1>
+    <form class="formulario" onsubmit="validarFormulario(event)">
+      <label for="usuario">USUARIO</label>
+      <span class="pregunta"
+        title="Ingrese un usuario que comience con una letra mayúscula y tenga al menos 3 números en cualquier posición.">&#x1F914;</span>
+      <input type="text" id="usuario" required>
+      <br>
+      <label for="password">CONTRASEÑA</label>
+      <span class="pregunta"
+        title="Ingrese una contraseña con una longitud mínima de 8 caracteres, que comience con un número y termine con una letra mayúscula seguida de otro número.">&#x1F914;</span>
+      <input type="password" id="password" required>
+
+      <br>
+      <input class="boton" type="submit" value="INGRESAR">
+    </form>
+
+    <div id="mensajeError" class="error"></div>
+  </div>
+
+  <script src="Ejercicio25.js"></script>
+</body>
+
+</html>

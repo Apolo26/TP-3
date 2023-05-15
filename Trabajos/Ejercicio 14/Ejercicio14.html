@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 14 - Js</title>
+</head>
+<body>
+  <div class="container">
+    <h1>FORMULARIO QUISQUILLOSO</h1>
+	<form class="formulario" name="registro" onsubmit="return validarFormulario(event)">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"><br>
+
+		<label for="edad">Edad:</label>
+		<input type="text" id="edad" name="edad"><br>
+
+		<label for="correo">Correo electrónico:</label>
+		<input type="text" id="correo" name="correo"><br>
+
+		<input type="submit" value="VALIDAR">
+	</form>
+  </div>
+
+  <script src="Ejercicio14.js"></script>
+</body>
+</html>

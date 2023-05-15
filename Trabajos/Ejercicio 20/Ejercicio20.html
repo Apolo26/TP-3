@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 20 - JS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>EVALUACION SORPRESA</h1>
+    <h1>😨</h1>
+    <div class="select-container">
+      <h2>Pregunta 1: ¿Cuál es la unidad de medida utilizada en CSS para especificar el tamaño de fuente?</h2>
+      <select id="pregunta1">
+        <option value="">Selecciona una respuesta</option>
+        <option value="px">px (píxeles)</option>
+        <option value="em">em</option>
+        <option value="pt">pt (puntos)</option>
+      </select>
+    </div>
+    
+
+    <div class="select-container">
+      <h2>Pregunta 2: ¿Cuál es el elemento HTML para crear una lista ordenada?</h2>
+      <select id="pregunta2">
+        <option value="">Selecciona una respuesta</option>
+        <option value="ol">ol</option>
+        <option value="ul">ul</option>
+        <option value="li">li</option>
+      </select>
+    </div>
+
+    <div class="select-container">
+      <h2>Pregunta 3: ¿Cuál es la propiedad CSS para aplicar un borde a un elemento?</h2>
+      <select id="pregunta3">
+        <option value="">Selecciona una respuesta</option>
+        <option value="outline"> outline </option>
+        <option value="border"> border </option>
+        <option value="border-style"> border-style </option>
+      </select>
+    </div>
+
+    <button class="boton" onclick="evaluarRespuestas()">Evaluar</button>
+    <button class="boton" onclick="mostrarRespuestas()">Mostrar Respuestas Correctas</button>
+
+    <div id="resultado"></div>
+
+  </div>
+
+  <script src="Ejercicio20.js"></script>
+</body>
+
+</html>

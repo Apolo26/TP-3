@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 13 - JS</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>VALIDAR FORMULARIO</h1>
+    <form class="formulario" onsubmit="return validarFormulario()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido"><br><br>
+
+      <label for="sexo">Sexo:</label>
+      <select class="selector" id="sexo" name="sexo">
+        <option value="">Seleccione su sexo</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select><br><br>
+
+      <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
+
+      <label for="correo-electronico">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo"><br><br>
+
+      <input class="boton" type="submit" value="VALIDAR">
+    </form>
+  </div>
+
+  <script src="Ejercicio13.js"></script>
+</body>
+</html>
